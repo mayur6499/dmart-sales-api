@@ -62,3 +62,9 @@ Control discounts to avoid losses
 
 ## Render Link:
 * https://dmart-sales-api.onrender.com
+
+## Author
+
+###  Mayur Wagh
+
+ (Aspiring Data Analyst / Data Scientist)
