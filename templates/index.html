@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DMart Profit Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="card">
+    <h1>DMart Profit</h1>
+
+    <form method="post">
+        <input type="number" step="any" name="quantity" placeholder="Quantity" required>
+        <input type="number" step="any" name="sales" placeholder="Sales" required>
+        <input type="number" step="any" name="discount" placeholder="Discount" required>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <div class="result">
+            Predicted Profit: ₹ {{ prediction | round(2) }}
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
